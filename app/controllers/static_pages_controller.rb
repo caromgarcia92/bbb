@@ -1,4 +1,9 @@
 class StaticPagesController < ApplicationController
-  def contact
+  before_action :authorize
+
+  def cool
+  end
+
+  def free
   end
 end
