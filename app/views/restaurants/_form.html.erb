@@ -23,7 +23,8 @@
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.number_field :price, id: :restaurant_price %>
+    <%#= form.number_field :price, id: :restaurant_price %>
+    <%= form.select :price, options_for_select(["💰","💰💰","💰💰💰"].each{|u| [u, u] }) %>
   </div>
 
   <div class="actions">
