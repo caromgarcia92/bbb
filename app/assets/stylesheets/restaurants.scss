@@ -1,3 +1,16 @@
-// Place all the styles related to the Restaurants controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.restaurant-table {
+  background: red;
+}
+
+tr {
+  flex-direction: column;
+  margin: 10px;
+}
+
+td {
+  margin: 10px;
+}
+
+.tbody-restaurant {
+  background-color: violet;
+}
