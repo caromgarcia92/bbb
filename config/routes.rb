@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :pictures
   resources :users, only: [:new, :create]
   resources :restaurants
-
+  resources :comments
 
   root 'restaurants#index'
   get  '/help',    to: 'static_pages#help'
