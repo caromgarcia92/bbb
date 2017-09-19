@@ -1,4 +1,6 @@
 <p id="notice"><%= notice %></p>
+
+
 <div class="container">
 <h1>Restaurants</h1>
 <table class="table table-striped table-hover">
@@ -18,9 +20,11 @@
         <td><%= restaurant.name %></td>
         <td><%= restaurant.comment %></td>
         <td><%= restaurant.price %></td>
-        <td><%= link_to 'Show', restaurant %></td>
-        <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
-        <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Add a pic', restaurant %></td>
+        <% if @current_user == restaurant.user %>
+          <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
+          <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
