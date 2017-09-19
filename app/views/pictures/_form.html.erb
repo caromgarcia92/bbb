@@ -1,8 +1,5 @@
 <%= form_with(model: @picture, local: true, html: { multipart: true }) do |form| %>
 
-  <div class="field">
-    <%= select_tag(:restaurant_id, options_for_select(@restaurant), :prompt => "Select a restaurant") %>
-  </div>
 
   <div class="field">
     <%= form.label :image %>
