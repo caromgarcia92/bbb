@@ -1,6 +1,5 @@
 class ChangeCommentDatatype < ActiveRecord::Migration[5.1]
   def change
-    change_table :restaurants, :comment, :text
-
+    change_column :restaurants, :comment, :text
   end
 end

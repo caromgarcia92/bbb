@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170919003833) do
+ActiveRecord::Schema.define(version: 20170919004916) do
 
   create_table "comments", force: :cascade do |t|
     t.text "text"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20170919003833) do
 
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
-    t.integer "comment"
+    t.text "comment"
     t.string "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
