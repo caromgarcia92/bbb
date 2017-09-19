@@ -1,5 +1,9 @@
 <%= form_with(model: @picture, local: true, html: { multipart: true }) do |form| %>
 
+  <div class="field">
+    <%= form.hidden_field :restaurant_id, id: :restaurant_id, value: @restaurant.id %>
+  </div>
+
 
   <div class="field">
     <%= form.label :image %>
