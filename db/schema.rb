@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170919004916) do
+ActiveRecord::Schema.define(version: 20170919160130) do
 
   create_table "comments", force: :cascade do |t|
     t.text "text"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20170919004916) do
     t.datetime "image_updated_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "restaurant_id"
   end
 
   create_table "restaurants", force: :cascade do |t|

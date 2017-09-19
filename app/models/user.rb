@@ -9,6 +9,7 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }
 
-  has_many :pictures, through: :restaurants
-  has_many :reviews, through: :restaurants
+  has_many :restaurants
+  # has_many :pictures, through: :restaurants
+  # has_many :reviews, through: :restaurants
 end

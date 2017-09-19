@@ -12,5 +12,17 @@
   <%= @restaurant.price %>
 </p>
 
+<% @restaurant.pictures.each do |picture| %>
+  <p>
+    <%= image_tag picture.image %>
+    <br>
+  </p>
+  <% end %>
+
+<br>
+
+  <h4>New Picture</h4>
+<%= render 'pictures/form', picture: @picture %>
+
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
 <%= link_to 'Back', restaurants_path %>
