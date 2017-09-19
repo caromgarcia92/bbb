@@ -9,3 +9,6 @@
 # 100.times do
 # 	Restaurant.create(name: Faker::Company.unique.name, comment: (1..10).to_a.sample, price: (1..5).to_a.sample)
 # end
+ Restaurant.create(name:"Coyo Taco")
+ Restaurant.create(name:"SuViche")
+ Restaurant.create(name:"Wynwood Kitchen and Bar")
