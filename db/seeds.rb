@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # 100.times do
-# 	Restaurant.create(name: Faker::Company.unique.name, busyness: (1..10).to_a.sample, price: (1..5).to_a.sample)
+# 	Restaurant.create(name: Faker::Company.unique.name, comment: (1..10).to_a.sample, price: (1..5).to_a.sample)
 # end

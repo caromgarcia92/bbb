@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Busyness</th>
+      <th>comment</th>
       <th>Price</th>
       <th colspan="3"></th>
     </tr>
@@ -17,7 +17,7 @@
       <%#= restaurant.pictures.inspect %>
       <tr>
         <td><%= restaurant.name %></td>
-        <td><%= restaurant.busyness %></td>
+        <td><%= restaurant.comment %></td>
         <td><%= restaurant.price %></td>
         <td><%= link_to 'Show', restaurant %></td>
         <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
