@@ -28,18 +28,21 @@
 
 h1 {
   font-family: 'Open Sans', sans-serif;
+  color: white;
 }
 
 tbody {
-  color: gray;
+  color: white;
   background-color: #1B1E25;
   font-weight: bold;
+
 }
 
 th {
   font-style: italic;
-  font-size: 18px;
+  font-size: 22px;
   background-color: #1B1E25;
+  color: gray;
 }
 
 td {
@@ -47,6 +50,13 @@ td {
   font-family: 'Open Sans', sans-serif;
 }
 
+.restaurant-pics {
+  display: flex;
+  flex-direction: row;
+}
+.restaurant-pics img {
+  max-height: 500px
+}
 // .sessions.new {
 //
 // }
