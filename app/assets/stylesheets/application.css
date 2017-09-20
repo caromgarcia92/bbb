@@ -50,3 +50,7 @@ a.navbar-nav:hover{
 img {
   max-height: 500px, !important;
 }
+
+img {
+    max-height: 400px !important;
+  }
