@@ -29,7 +29,6 @@
   color: black;
 }
 
-
 .navbar .navbar-brand,
 .navbar .navbar-brand:visited,
 .navbar .navbar-brand:hover{
@@ -48,3 +47,7 @@ a.navbar-nav:visited,
 a.navbar-nav:hover{
   color: black;
 }*/
+img {
+  max-height: 500px, !important;
+}
+
