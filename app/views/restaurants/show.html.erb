@@ -12,14 +12,17 @@
   <%= @restaurant.price %>
 </p>
 
-<% @restaurant.pictures.each do |picture| %>
-  <p>
-    <%= image_tag picture.image %>
-    <br>
-  </p>
-  <% end %>
+<div class="img-responsive text-center">
 
-<br>
+  <% @restaurant.pictures.each do |picture| %>
+    <p>
+      <%= image_tag picture.image, class: "test_class" %>
+      <br>
+    </p>
+    <% end %>
+
+  <br>
+</div>
 
   <h4>New Picture</h4>
 <%= render 'pictures/form', picture: @picture %>
