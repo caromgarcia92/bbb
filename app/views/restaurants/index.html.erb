@@ -1,50 +1,63 @@
 <p id="notice"><%= notice %></p>
-<div class="table table-striped table-hover">
-<!-- <h1>Restaurants</h1> -->
-<table class="container">
-  <thead>
-    <tr class="active">
-      <!-- <th>Name</th> -->
-      <!-- <th>Comment</th> -->
-      <!-- <th>Price</th>
-      <th colspan="3"></th> -->
-    </tr>
-  </thead>
+<<<<<<< HEAD
 
-  <tbody>
-    <% @restaurants.each do |restaurant| %>
+
+=======
+>>>>>>> b19687e058e2713371f24bd1db06eee55361d41a
+<div class="table table-striped table-hover">
+  <!-- <h1>Restaurants</h1> -->
+  <table class="container">
+    <thead>
+      <tr class="active">
+        <!-- <th>Name</th> -->
+        <!-- <th>Comment</th> -->
+        <!-- <th>Price</th>
+        <th colspan="3"></th> -->
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @restaurants.each do |restaurant| %>
       <%#= restaurant.pictures.inspect %>
       <tr class="active">
+<<<<<<< HEAD
+
+=======
+>>>>>>> b19687e058e2713371f24bd1db06eee55361d41a
         <!-- <td><%= restaurant.name %></td> -->
         <!-- <td><%= restaurant.comment %></td> -->
         <!-- <td><%= restaurant.price %></td> -->
 
+<<<<<<< HEAD
+        <!-- <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td> -->
+        <!-- <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+=======
          <!-- <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td> -->
         <!-- <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td> --> -->
 
+>>>>>>> b19687e058e2713371f24bd1db06eee55361d41a
       </tr>
-    <% end %>
-  </tbody>
-</table>
+      <% end %>
+    </tbody>
+  </table>
 </div>
 <br>
 
 <div class="restaurant-pics">
-  <% @restaurants.each do |restaurant| %>
-<!-- find pictures.find_by(index=@restuarants.id) -->
+  <% @restaurants.limit(4).each_with_index do |restaurant, index| %>
+  <!-- find pictures.find_by(index=@restuarants.id) -->
 
-    <%#= restaurant.pictures.inspect %>
-    <div>
-
+  <%#= restaurant.pictures.inspect %>
+    <div class="section-1">
       <figure>
         <figcaption><h2><%= restaurant.name %></h2></figcaption>
 
         <!-- <%#= image_tag restaurant.picture %>  something like this when paperclip implemented -->
-        <%= image_tag "stuff.JPG" %>
+        <%= image_tag "stuff#{index}.JPG" rescue nil %>
         <td><%= link_to 'Learn More', restaurant %></td>
 
       </figure>
     </div>
-
+  </div>
   <% end %>
 </div>
