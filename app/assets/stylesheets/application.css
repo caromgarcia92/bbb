@@ -14,7 +14,16 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require reset/main.css 
+ *= require reset/main.css
  *= require_tree .
  *= require_self
  */
+
+.navbar {
+  background-image: url('https://meetat-thebarre.com/wp-content/uploads/2016/06/IMG_9502-smaller.jpg');
+  /*min-width: 100vw;*/
+  /* Center and scale the image nicely */
+  background-size: cover;
+  min-width: 100vw;
+  display: inline-block;
+}
