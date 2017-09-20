@@ -4,15 +4,15 @@
 
 //
 
-.restaurants.index {
-  min-height: 100vh;
-  background-color: #1B1E25;
-}
-
-.restaurants.edit {
-  min-height: 100vh;
-  background-color: #1B1E25;
-}
+//  {
+//   min-height: 100vh;
+//   background-color: #1B1E25;
+// }
+//
+//  {
+//   min-height: 100vh;
+//   background-color: #1B1E25;
+// }
 
 .restaurants.show {
   min-height: 100vh;
@@ -21,15 +21,15 @@
 }
 
 
-.restaurants.new, .restaurants.create {
+.restaurants.new, .restaurants.create, .restaurants.edit, .restaurants.index {
   min-height: 100vh;
   background-color: #1B1E25;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Open Sans', sans-serif;
-  color: white;
 }
+
 
 tbody {
   color: white;
@@ -57,6 +57,9 @@ td {
 .restaurant-pics img {
   max-height: 500px
 }
-// .sessions.new {
-//
-// }
+
+.section-1 h2 {
+  display: flex;
+  flex-wrap: wrap;
+  color: white; 
+}
