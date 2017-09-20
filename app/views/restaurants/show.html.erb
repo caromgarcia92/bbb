@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+
   <strong>Name:</strong>
   <% if @restaurant.url %>
   <%= link_to @restaurant.name, @restaurant.url, target: "_blank" %>
@@ -9,12 +10,12 @@
   <% end %>
 </p>
 <p>
-  <strong>Rating:</strong>
+  <!-- <strong>Rating:</strong> -->
   <%= @restaurant.comment %>
 </p>
 </p>
 <p>
-  <strong>Price:</strong>
+  <!-- <strong>Price:</strong> -->
   <%= @restaurant.price %>
 </p>
 
