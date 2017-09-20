@@ -24,4 +24,8 @@
   <h4>New Picture</h4>
 <%= render 'pictures/form', picture: @picture %>
 
+<% if @current_user == @restaurant.user %>
+  <td><%= link_to 'Edit', edit_restaurant_path(@restaurant) %></td>
+  <td><%= link_to 'Destroy', @restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<% end %>
 <%= link_to 'Back', restaurants_path %>
