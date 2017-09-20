@@ -30,6 +30,11 @@
   </div>
 
   <div class="form-group">
+    <%= form.label :url, "Website", class: "new-restaurant" %>
+    <%= form.text_field :url, id: :restaurant_name, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
     <%= form.submit "Create Restaurant", class: "btn btn-success" %>
   </div>
 <% end %>
