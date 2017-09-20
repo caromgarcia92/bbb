@@ -26,8 +26,28 @@
   background-size: cover;
   min-width: 100vw;
   display: inline-block;
+  color: black;
 }
 
+.navbar .navbar-brand,
+.navbar .navbar-brand:visited,
+.navbar .navbar-brand:hover{
+  color: black;
+}
+
+
+.dropdown-toggle,
+.dropdown-toggle:visited,
+.dropdown-toggle:hover {
+  color: black !important;
+}
+/*
+a.navbar-nav,
+a.navbar-nav:visited,
+a.navbar-nav:hover{
+  color: black;
+}*/
 img {
   max-height: 500px, !important;
 }
+

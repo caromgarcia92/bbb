@@ -16,16 +16,16 @@
   <%= form.hidden_field :user_id, id: :user_id, value: @current_user.id %>
 
   <div class="form-group">
-    <%= form.label :name, "Restaurant Name" %>
+    <%= form.label :name, "Restaurant Name", class: "new-restaurant" %>
     <%= form.text_field :name, id: :restaurant_name, class: "form-control" %>
   </div>
 
   <div class="form-group">
-    <%= form.label :comment %>
+    <%= form.label :comment, "Rating", class: "new-restaurant" %>
     <%= form.select :price, options_for_select(["🙌🏼","🤷🏼","💩"].each{|u| [u, u] }), {}, {class: "form-control"}  %>  </div>
 
   <div class="form-group">
-    <%= form.label :price %>
+    <%= form.label :price, "Price", class: "new-restaurant" %>
     <%= form.select :price, options_for_select(["💰","💰💰","💰💰💰"].each{|u| [u, u] }), {}, {class: "form-control"}  %>
   </div>
 
