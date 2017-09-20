@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+
+  <strong>Name:</strong>
   <% if @restaurant.url %>
   <%= link_to @restaurant.name, @restaurant.url, target: "_blank" %>
   <% else %>
