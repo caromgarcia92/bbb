@@ -31,7 +31,7 @@ class PicturesController < ApplicationController
         format.html { redirect_to @picture, notice: 'Picture was successfully created.' }
         format.json { render :show, status: :created, location: @picture }
       else
-        format.html { render :new }
+        format.html { redirect_to @picture.restaurant }
         format.json { render json: @picture.errors, status: :unprocessable_entity }
       end
     end
@@ -69,6 +69,6 @@ class PicturesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def picture_params
-      params.require(:picture).permit(:title, :image, :restaurant_id)
+      params.require(:picture).permit(:image, :restaurant_id)
     end
 end
