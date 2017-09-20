@@ -14,19 +14,19 @@
     <nav class="navbar navbar-default">
 
       <div class="container">
-        <div class="header-container">
+        <div class="header-container" id="bootstrap-overrides">
           <div class="navbar-header">
             <%= link_to "WynEats", root_path, class: "navbar-brand" %>
           </div>
 
           <ul class="nav navbar-nav navbar-right">
             <% if !current_user %>
-            <li><%= link_to "Sign-Up", signup_path %></li>
+            <li><%= link_to "Sign-Up", signup_path, class: "navbar-brand" %></li>
             <% end %>
             <% if current_user %>
-              <li><%= link_to "Sign Out", logout_path, method: :destroy %></li>
+              <li><%= link_to "Sign Out", logout_path, method: :destroy, class: "navbar-brand" %></li>
             <% else  %>
-              <li><%= link_to "Log In", login_path %></li>
+              <li><%= link_to "Log In", login_path, class: "navbar-brand" %></li>
               <% end %>
 
           </ul>
@@ -34,7 +34,7 @@
           <ul class="nav navbar-nav">
 
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">munchies sneek peek <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">munchies sneek peek<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <% Restaurant.all.each do |restaurant| %>
                   <li class="<%= 'active' if params[:restaurants] == restaurant.name %>">
@@ -45,14 +45,14 @@
             </li>
 
             <% if current_user %>
-              <li><%= link_to "Add Restaurant", new_restaurant_path %></li>
+              <li><%= link_to "Add Restaurant", new_restaurant_path, class: "navbar-brand" %></li>
             <% end %>
           </ul>
 
           </div>
 
         </div>
-
+      </div>
     </nav>
 
 
