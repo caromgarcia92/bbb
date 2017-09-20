@@ -2,7 +2,11 @@
 
 <p>
   <strong>Name:</strong>
+  <% if @restaurant.url %>
+  <%= link_to @restaurant.name, @restaurant.url, target: "_blank" %>
+  <% else %>
   <%= @restaurant.name %>
+  <% end %>
 </p>
 <p>
   <strong>Rating:</strong>
@@ -13,6 +17,7 @@
   <strong>Price:</strong>
   <%= @restaurant.price %>
 </p>
+
 
 <div class="img-responsive text-center">
 
