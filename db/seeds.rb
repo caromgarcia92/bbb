@@ -11,4 +11,6 @@
 # end
  Restaurant.create(name:"Coyo Taco")
  Restaurant.create(name:"SuViche")
- Restaurant.create(name:"Wynwood Kitchen and Bar")
+ Restaurant.create(name:"Jugo Fresh")
+ Restaurant.create(name:"Wood Tavern")
+ Restaurant.create(name:"Wynwood Yard")
