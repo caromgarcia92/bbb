@@ -22,10 +22,10 @@
 
 
 .restaurants.new, .restaurants.create, .restaurants.edit, .restaurants.index {
-  background: #eacda3; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #eacda3, #d6ae7b); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #eacda3, #d6ae7b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
+  background: #4AC29A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+} 
 
 h1, h2 {
   font-family: 'Open Sans', sans-serif;
@@ -79,7 +79,9 @@ td {
   padding-top: .8em;
 
 }
-
+.section-2 a {
+  color: white
+}
 .responsive-image {
   color: white;
 }
@@ -102,10 +104,14 @@ td {
 
 .new-restaurant {
   color: black !important;
+}
 
 h3 {
 color: white;
 font-family: 'Trocchi', serif;
 text-align: center;
 padding-bottom: 2em;
+}
+.test_class {
+  max-width: 600px;
 }
