@@ -60,7 +60,7 @@ td {
 
 .section-1 h2 {
   display: flex;
-  flex-wrap: wrap;
+
   color: #7c795d;
   font-family: 'Trocchi', serif;
   font-size: 45px;
@@ -79,4 +79,22 @@ td {
 
 .responsive-image {
   
+
+  color: white;
+}
+
+.restaurants.new {
+  background-image: url('https://c2.staticflickr.com/4/3676/12312245165_7a796b0aea_b.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.restaurant-new-container h1 {
+  color: blue;
 }
