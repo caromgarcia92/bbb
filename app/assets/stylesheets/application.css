@@ -35,6 +35,14 @@
   color: black;
 }
 
+.navbar a {
+  text-shadow: 1px 1px 2px white;
+}
+
+.fontype {
+  font-family: sans-serif;
+  }
+
 
 .dropdown-toggle,
 .dropdown-toggle:visited,
