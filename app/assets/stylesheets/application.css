@@ -35,6 +35,17 @@
   color: black;
 }
 
+.navbar a {
+  text-shadow: 1px 1px 2px white;
+}
+
+.fontype {
+  font-family: sans-serif;
+  }
+
+#body {
+  padding-bottom: 5em;
+}
 
 .dropdown-toggle,
 .dropdown-toggle:visited,
@@ -47,10 +58,9 @@ a.navbar-nav:visited,
 a.navbar-nav:hover{
   color: black;
 }*/
-img {
-  max-height: 500px, !important;
-}
+
 
 img {
     max-height: 400px !important;
+    max-width: 500px !important;
   }

@@ -1,71 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<div class="table table-striped table-hover">
+<div class="table table-striped table-hover panel">
   <h2>About us</h2>
-  <h3>WynEats is a friendly webpage for the Wyncode community to view restaurants in the Wynwood area focused for onboarding Wyncoders from out of state and new to the area!</h3>
-  <!-- <h1>Restaurants</h1> -->
-  <div class="container">
-    <div class="row">
-
-
-      <!-- <table class="container"> -->
-
-      <!-- <thead> -->
-      <!-- <tr class="active"> -->
-      <!-- <th>Name</th> -->
-      <!-- <th>Comment</th> -->
-      <!-- <th>Price</th>
-      <th colspan="3"></th> -->
-      <!-- </tr> -->
-      <!-- </thead> -->
-
-      <!-- <tbody> -->
-      <!-- <% @restaurants.each do |restaurant| %>
-      <span><%= restaurant %></span> -->
-      <%#= restaurant.pictures.inspect %>
-      <!-- <tr class="active"> -->
-
-      <!-- <td><%= restaurant.name %></td> -->
-      <!-- <td><%= restaurant.comment %></td> -->
-      <!-- <td><%= restaurant.price %></td> -->
-
-
-      <!-- <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td> -->
-      <!-- <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
-
-      <!-- <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td> -->
-      <!-- <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
-
-
-      <!-- </tr> -->
-      <!-- <% end %> -->
-      <!-- </tbody> -->
-      <!-- </table> -->
-    </div>
-  </div>
+  <h3 class='fontype'>WynEats is a friendly webpage for the Wyncode community to view restaurants in the Wynwood area focused for onboarding Wyncoders from out of state and new to the area!</h3>
 </div>
 <br>
 <div class="restaurant-pics">
   <% @restaurants.each_with_index do |restaurant, index| %>
-  <!-- find pictures.find_by(index=@restuarants.id) -->
-  <%#= restaurant.pictures.inspect %>
-  <div class="col-md-12  ">
-    <figure>
-      <figcaption>
-        <div class="text-left">
-          <h2><%= restaurant.name %></h2>
-        </div>
+    <div class="col-md-12  ">
+      <figure>
+        <figcaption>
+          <div class="text-left">
+            <h2><%= restaurant.name %></h2>
+          </div>
 
-      </figcaption>
-      <div class="img-responsive text-center">
-        <!-- <%#= image_tag restaurant.picture %>  something like this when paperclip implemented -->
-        <%= image_tag restaurant.pictures.sample.image, class: "test_class" rescue nil %>
-        <div class="section-2">
-          <%= link_to 'Learn More', restaurant, class: "test_class" %>
+        </figcaption>
+        <div class="img-responsive text-center">
+          <!-- <%#= image_tag restaurant.picture %>  something like this when paperclip implemented -->
+          <%= image_tag restaurant.pictures.sample.image, class: "test_class" rescue nil %>
+          <div class="section-2">
+            <%= link_to 'Learn More', restaurant, class: "test_class" %>
+          </div>
         </div>
-      </div>
-    </figure>
-  </div>
+      </figure>
+    </div>
+  <% end %>
 </div>
-
-<% end %>
