@@ -20,15 +20,15 @@
 
 
 <div class="img-responsive text-center">
-
+<div class='picbox'>
   <% @restaurant.pictures.each do |picture| %>
-  <p>
+  <p id="image-pic" >
     <%= image_tag picture.image, class: "test_class" %>
     <br>
   </p>
   <% end %>
-
   <br>
+  </div>
 </div>
 
 <h4>New Picture</h4>

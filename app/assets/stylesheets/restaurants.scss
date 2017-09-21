@@ -54,10 +54,10 @@ td {
 
 .restaurant-pics {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .restaurant-pics img {
-  max-height: 500px
+  max-width: 500px
 }
 
 .section-1 h2 {
@@ -113,9 +113,7 @@ font-family: 'Trocchi', serif;
 text-align: center;
 padding-bottom: 2em;
 }
-.test_class {
-  max-width: 780px;
-}
+
 
 p {
 font-size: 34px;

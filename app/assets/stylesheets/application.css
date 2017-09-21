@@ -58,10 +58,9 @@ a.navbar-nav:visited,
 a.navbar-nav:hover{
   color: black;
 }*/
-img {
-  max-height: 500px, !important;
-}
+
 
 img {
     max-height: 400px !important;
+    max-width: 500px !important;
   }
