@@ -43,6 +43,9 @@
   font-family: sans-serif;
   }
 
+#body {
+  padding-bottom: 5em;
+}
 
 .dropdown-toggle,
 .dropdown-toggle:visited,
